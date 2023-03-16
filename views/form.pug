@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title 
+  p
+  form(method= "POST" action="/new")
+     div.form-group
+        input(type='text', name='username', placeholder='User')
+     div.form-group 
+        input(type='text', name='messageText', placeholder='Message')
+     button.btn.btn-primary(type='submit') Submit
